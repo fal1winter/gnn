@@ -132,7 +132,7 @@ class DataHandler:
 		else:
 			closure_Adj = None
 			closure_Adj_norm = None
-		#return adj_tea,adj_stu, closure_Adj_norm, (clo_rows, clo_cols) #(rows, cols)
+		#return adj_tea,adj_stu, closure_Adj_norm, (clo_rows, clo_cols) #(rows, cols)1
 
 		if self.train_middle_model:
 			clo_rows, clo_cols,  _ = closure_Adj_norm.coo()
