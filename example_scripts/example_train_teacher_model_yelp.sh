@@ -1,0 +1,9 @@
+CUDA_VISIBLE_DEVICES=2 python pretrainTeacher.py \
+    --dataset='yelp' \
+    --epoch_tea=300 \
+    --lr=0.0004 \
+    --reg=1.5e-06 \
+    --latdim=64 \
+    --gnn_layer=8 \
+    --model_save_path=./outModels/yelp/example3/checkpoints/tea_ckpts  \
+    --his_save_path=./outModels/yelp/example3/history/tea_his  | tee ./logs/teacher_yelp_example3_log

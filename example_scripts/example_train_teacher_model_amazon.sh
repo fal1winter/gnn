@@ -1,0 +1,9 @@
+CUDA_VISIBLE_DEVICES=2 python pretrainTeacher.py \
+    --dataset='amazon' \
+    --epoch_tea=600 \
+    --lr=0.0004 \
+    --reg=1e-09 \
+    --latdim=64 \
+    --gnn_layer=8 \
+    --model_save_path=./outModels/amazon/example3/checkpoints/tea_ckpts  \
+    --his_save_path=./outModels/amazon/example3/history/tea_his  | tee ./logs/teacher_amazon_example3_log
